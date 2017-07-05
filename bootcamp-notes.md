@@ -29,7 +29,7 @@
     *  ###### Crear una cuenta en GitHub
     Si ya tienes una cuenta en GitHub puedes saltar al siguiente paso, pero si no tienes una cuenta en GitHub, puedes crear una nueva cuenta con su correo electronico en el siguiente link: [Registrate :smile_cat:][]:point_down:
 
-      ![Register][Register]
+      ![Registro][Register]
 
   *  ###### Configuración de la  SSH Keys
       * Para crear la llave privada o publica se utilizara la consola con los siguientes comandos:
@@ -55,7 +55,7 @@
 
   *  ###### Descargar un editor de codigo
 
-    >```bash
+    ```bash
     Sublime 3
     Atom
     brackets
