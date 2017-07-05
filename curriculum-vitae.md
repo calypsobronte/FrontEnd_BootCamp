@@ -1,7 +1,7 @@
 # Lina Maria **Montaño Ramirez**
 #### Datos de contacto:
 ```
-  • E-mail: codelinamaria@gmail.com
+    • E-mail: codelinamaria@gmail.com
 	• Tel: +57 312 631 55 09
 	• Página web: https://medium.com/@calypso_bronte
   ```

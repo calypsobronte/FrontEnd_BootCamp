@@ -27,35 +27,140 @@
   git config --global user.email "<Y Su correo electronico>"
   ```
     *  ###### Crear una cuenta en GitHub
-    Si ya tienes una cuenta en GitHub puedes saltar al siguiente paso, pero si no tienes una cuenta en GitHub, puedes crear una nueva cuenta con su correo electronico en el siguiente link: [Registrate :smile_cat:][]
+    Si ya tienes una cuenta en GitHub puedes saltar al siguiente paso, pero si no tienes una cuenta en GitHub, puedes crear una nueva cuenta con su correo electronico en el siguiente link: [Registrate :smile_cat:][]:point_down:
+
+      ![Register][Register]
 
   *  ###### Configuración de la  SSH Keys
-      * Crear la clave privada
-    * Utilizando la consola, colocamos este comando
-          * cat ~/.id_rsa.pub (te genera la clave)
-    * Ingresar a nuestro correo electronico
-        * Nos llega un link de la llave, la copiar
-    * Ingresar al GitHub
-    * Pegar el link de la llave
-    * Genera la llave Privada
+      * Para crear la llave privada o publica se utilizara la consola con los siguientes comandos:
+     `ssh -v` luego `ls -a ~/.ssh` le damos una segunda vez al comando -> ` ls -a ~/.ssh` despues le damos para generar las claves  `ssh-keygen` despues ponemos este comando donde nos mostrara la llave publica y privada  
+     * Ingresamos al correo electronico
+     * Nos llega un codigo con 6 digitos, la copiar, despues volvemos a poner el comando `ls ~/.ssh` al final ponemos este ultimo comando que nos genera un codigo que sera en si nuestra llave en este caso sera publica
+     `cat ~/.ssh/id_rsa.pub`. Es siguiente paso copiamos la llave que esta genero se:
+    * Ingresar al GitHub [SSH and GPG Keys][]
+    * Le damos en `New SSH Keys`
+    * Pegamos la llave que nos habia generado con el `cat ~/.ssh/id_rsa.pub` que sera algo como:
+      >ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwcTqUIzZPaBsid2psVp0vaoLQ983UHj2wwmv5r6L5usNTQZppRvtbw2W6EW8fX8VaCnek5C2yDncKLvP6XJQTnKZTkqRXJS8UCwVy2VE+puLq02C+hZPhJdHXd0Hox5NQuwznZPYL4CesDYE4FsnYdpvtyRe6v3Wx1MjET1sjY7am6Z/oD7u6Uoa4pGbacWCgE+USKZ4StooTZYllo7aK4FYH1dqotH5TRiOpK+8WSQsFtvxjMmueK0oS/rrU7jMwIp1XUrjgTOt32LYj4N6fSy7l133egfaV8nhmJDpf6jVk5jHQPfqGg0jBDaGE9UAqcUVme48TwYr Prueba prueba@prueba
 
+        * Generamos la llave.
+        En la imagen nos muestra lo antes mencionado:
 
+        `Configuracion de SSH Keys`![Configured the SSH Keys][Configured the SSH Keys]
 
+        `SSH Keys`![SSH Keys][SSH Keys]
 
+  *  ###### Instalar Node.js
+  Instalar Node.js [Node.js][]
+  Si lo tienes ya instalado podemos mirar en que versión se instalado `node -v`
 
+  *  ###### Descargar un editor de codigo
 
+    >```bash
+    Sublime 3
+    Atom
+    brackets
+    VS Code
+    NotePad ++
+    ```
 
+  *  ###### Instalar NPM
+  Instalaremos el npm para realizar el reto en parejas en el cual se estara integrando con  la pagina [webtask.io][] que nos generara una URL que podemos utilizarla o compartirla.
 
+      Comandos:
+      >Npm i -g wt-cli
+      >>Wt int `<su correo>`
+      >>>Wt edit
+      >>>>Wt ls
 
+      Luego utilizaremos webtask que sera uno de los primeros acercamientos a un editor de codigo.
 
-
-
-
+      ![webtask][webtask]
 
 ----------------------------------------------------------------
 
 
 * #### 28 Junio del 2017
+   ##### MarkDown
+
+  Markdown es un lenguaje de _formato ligero_ que facilita la creación de elementos básicos de **HTML** (creado por [John Gruber][] en 2004 y ayudado por [Aaron Swartz][]) , con una *sintaxis fácil de usar* ya sea para crear formularios en nuestros editores o manejarlo directamente en  la  plataforma GitHub. ay varias apps moviles que utiliza esta sintaxis para darle una mejor experiencia a sus usuarios entre ellas esta: ** WhatsApp, Twitter **
+
+  *  ###### ¿Que es MarkDown?
+  Herramienta de conversión de texto plano a Html, dando formato a las palabras como hacerlas negritas o itálicas, agregar imágenes, y creando listas o tablas. En general, Markdown es sólo un texto normal con un poco de caracteres no-alfabeticos como # o \*.
+
+    Tiene **licencia BSD**, es decir, se distribuye libremente
+      *  ###### Ventajas Markdown
+            * Es facil de leer
+            * Se puede escribir HTML simultaneamente
+            * Es compatible con cualquier Dispositivo
+            * Es Dificil de que se cometan errores
+  *  ###### Sintaxis    
+        * **Encabezados:**
+        <!-- Headers -->
+        crea headers HTML fácilmente precediendo al texto con una serie de símbolos de números `(#)`.
+
+              # Esto es un <h1>
+              ## Esto es un <h2>
+              ### Esto es un <h3>
+              #### Esto es un <h4>
+              ##### Esto es un <h5>
+              ###### Esto es un <h6>
+          **Nota:** Markdown también nos proveé con dos alternativas para indicar **h1** y **h2**
+
+              Esto es un h1
+
+              =============
+
+              Esto es un h2
+
+              \-------------
+        * **Estilo de Texto:**
+            <!-- Estilos para texto plano -->
+            El texto puede ser fácilmente estilizado con italicas, negritas o tachado con símbolos: Asterisco `(*)` , Guión bajo `( _ )` , `(~)`.
+
+            *Texto en itálicas.* = \*Texto en itálicas.*
+
+            _Igual que este texto._ = \_Igual que este texto._
+
+            **Texto en negrita.** = \*\*Texto en negrita.**
+
+            __Igual que este texto.__ = \__Igual que este texto.__
+
+            ***Texto con ambos estilos: itálica y negrita.*** = \*\*\*Texto con ambos estilos: itálica y negrita.\***
+
+            **_Igual que este!_** = \*\*\_Igual que este!\_**
+
+            *__¡O este texto!__* = \*\__¡O este texto!\__*
+
+            ~~Texto tachado.~~ = \~~Texto tachado.~~
+
+        * **Salto de linea:**
+        En algun momento necesitamos hacer un salto de linea para empezar otro parrafo en el cual se podra utilizar `<br />`.
+
+            ¡Hay un <br /> arriba de mí!
+
+            Nota: Selecciona la linea :point_up_2:  para que veas el salto: `¡Hay un <br /> arriba de mí!`
+        * **Citas:**
+        Las citas de bloque son fáciles y se pueden hacer con el caracter `>`; las citas pueden estar anidadas (una cita dentro de otra) añadiendo niveles `>>`
+        ```bash
+        > Inicio del primer nivel.
+        >
+        > > Cita anidada.
+        >
+        > Regreso al primer nivel.
+        ```
+        > Inicio del primer nivel.
+        >
+        > > Cita anidada.
+        >
+        > Regreso al primer nivel.
+
+        * **Listas:** Las listas desordenadas se hacen usando asteriscos `*`, símbolos de más `+`, o guiones `-`.
+
+  ##### Scrum
+ *  ###### ¿Que es Scrum?  
+
+
+
 
 =================================================================
 
@@ -80,51 +185,39 @@
 
 
 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<center>
+  <footer>
+     <a style="float: left" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="img/cc.png"></a>
+<p>
+<br />
+<br />
+      © 2017  -
+        <a href="https://github.com/linamontano">Lina Montaño</a>
+    </p>
 
-
-
+  </footer>
+  </center>
 
 <!-- Enlaces de Webs -->
 [Descargar Git ¡Aca!]:https://git-scm.com/downloads "Descargar Git"
-[Registrate :smile_cat:]: https://github.com/ "Registrarse en GitHub"
+[Registrate :smile_cat:]: https://github.com/join?source=header-home "Registrarse en GitHub"
+[SSH and GPG Keys]: https://github.com/settings/keys "SSh Keys"
+[Node.js]: https://nodejs.org/download/ "Descargar Node.js"
+[Webtask.io]: https://webtask.io/ "Web Task"
+[Aaron Swartz]: https://es.wikipedia.org/wiki/Aaron_Swartz "El Hijo del Internet"
+[John Gruber]: https://en.wikipedia.org/wiki/John_Gruber "Creador de MarkDown"
 
 
 <!-- Enlaces de Imagenes -->
 [consola]: /img/Git_Bash.png  "Abrir Consola Git Bash"
-[Consola Git Bash]: /img/Consola_git_bash.jpg "Consola Git Bash"
-
-
-
-
-
-
-
-[google]
-  [google]: http://google.com/  "Google"
-
-  I get 10 times more traffic from [Google] [1] than from
-  [Yahoo] [2] or [MSN] [3].
-
-  [1]: http://google.com/        "Google"
-[2]: http://search.yahoo.com/  "Yahoo Search"
-[3]: http://search.msn.com/    "MSN Search"
-
-I get 10 times more traffic from [Google][] than from
-[Yahoo][] or [MSN][].
-
-  [google]: http://google.com/        "Google"
-  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
-  [msn]:    http://search.msn.com/    "MSN Search"
-
-![Alt text][id]
-[id]: url/to/image  "Optional title attribute"
-
- __*subrayado itálico*__
-
-un*fucking*believable
-\*this text is surrounded by literal asterisks\*
-Use the `printf()` function.
-<p>Use the <code>printf()</code> function.</p>
-``There is a literal backtick (`) here.``
-Please don't use any `<blink>` tags.
-`&#8212;` is the decimal-encoded equivalent of `&mdash;`.
+[Consola Git Bash]: /img/Consola_git_bash.JPG "Consola Git Bash"
+[Register]: /img/Github.JPG "Registrate"
+[Configured the SSH Keys]: /img/Git_Bash.JPG "Configuración del SSH Keys"
+[SSH Keys]: /img/Git_SSH_keys.png "LLave Privada o Publica"
+[webtask]: /img/webtask.jpg "Web Task"
