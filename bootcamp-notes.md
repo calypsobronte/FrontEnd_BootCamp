@@ -64,15 +64,15 @@
   *  ###### Instalar NPM
   Instalaremos el npm para realizar el reto en parejas en el cual se estara integrando con  la pagina [webtask.io][] que nos generara una URL que podemos utilizarla o compartirla.
 
-      Comandos:
-      >Npm i -g wt-cli
-      >>Wt int `<su correo>`
-      >>>Wt edit
-      >>>>Wt ls
+    Comandos:
+    >Npm i -g wt-cli
+    >>Wt int `<su correo>`
+    >>>Wt edit
+    >>>>Wt ls
 
-      Luego utilizaremos webtask que sera uno de los primeros acercamientos a un editor de codigo.
+    Luego utilizaremos webtask que sera uno de los primeros acercamientos a un editor de codigo.
 
-      ![webtask][webtask]
+    ![webtask][webtask]
 
 ----------------------------------------------------------------
 
