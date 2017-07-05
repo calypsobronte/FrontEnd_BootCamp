@@ -27,9 +27,7 @@
   git config --global user.email "<Y Su correo electronico>"
   ```
     *  ###### Crear una cuenta en GitHub
-    Si ya tienes una cuenta en GitHub puedes saltar al siguiente paso, pero si no tienes una cuenta en GitHub, puedes crear una nueva cuenta con su correo electronico en el siguiente link: [Registrate :smile_cat:][]:point_down:
-
-      ![Registro][Register]
+    Si ya tienes una cuenta en GitHub puedes saltar al siguiente paso, pero si no tienes una cuenta en GitHub, puedes crear una nueva cuenta con su correo electronico en el siguiente link: [Registrate :smile_cat:][]:point_down:![Registro][Register]
 
   *  ###### Configuración de la  SSH Keys
       * Para crear la llave privada o publica se utilizara la consola con los siguientes comandos:
