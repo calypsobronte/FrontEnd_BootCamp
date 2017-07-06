@@ -113,6 +113,7 @@
               #### Esto es un <h4>
               ##### Esto es un <h5>
               ###### Esto es un <h6>
+              
           **Nota:** Markdown también nos proveé con dos alternativas para indicar **h1** y **h2**
 
               Esto es un h1
