@@ -141,7 +141,7 @@
 
             *__¡O este texto!__* = \*\_\_¡O este texto!\_\_*
 
-            ~~Texto tachado.~~ = \~~Texto tachado.\~~
+            ~~Texto tachado.~~ = \~\~Texto tachado.\~\~
 
             En `HTML` equivale:
             ```bash
