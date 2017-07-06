@@ -1,4 +1,4 @@
-People
+**People**
 
 :bowtie:
 :smile:
@@ -194,7 +194,8 @@ People
 :rage4:
 :suspect:
 :trollface:
-Nature
+
+**Nature**
 
 :sunny:
 :umbrella:
@@ -311,7 +312,8 @@ Nature
 :partly_sunny:
 :octocat:
 :squirrel:
-Objects
+
+**Objects**
 
 :bamboo:
 :gift_heart:
@@ -573,7 +575,8 @@ Objects
 :eggplant:
 :tomato:
 :corn:
-Places
+
+**Places**
 
 :house:
 :house_with_garden:
@@ -681,7 +684,8 @@ Places
 :gb:
 :uk:
 :de:
-Symbols
+
+**Symbols**
 
 :one:
 :two:
@@ -885,15 +889,27 @@ Symbols
 :small_red_triangle:
 :small_red_triangle_down:
 :shipit:
-Campfire also supports a few sounds
+
+*Campfire also supports a few sounds*
 
 ► ► /play secret► ► /play trombone► ► /play crickets► ► /play rimshot► ► /play vuvuzela► ► /play tmyk► ► /play live► ► /play drama► ► /play yeah► ► /play greatjob► ► /play pushit► ► /play nyan► ► /play tada► ► /play ohmy► ► /play bueller► ► /play ohyeah► ► /play 56k► ► /play dangerzone► ► /play horn► ► /play horror► ► /play loggins► ► /play yodel► ► /play sax► ► /play noooo► ► /play heygirl► ► /play inconceivable► ► /play deeper► ► /play whoomp► ► /play clowntown► ► /play what► ► /play bezos► ► /play trololo► ► /play makeitso► ► /play sexyback► ► /play bell► ► /play danielsan► ► /play greyjoy► ► /play story► ► /play dadgummit► ► /play rollout► ► /play cottoneyejoe► ► /play rumble► ► /play guarantee► ► /play unix► ► /play letitgo► ► /play wups► ► /play flawless► ► /play butts
 Emojis and social media
 
-Emojis enhance just about any user experience. They always have a place, from casual social media use to top level inbound marketing strategies.
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<center>
+  <footer>
+     <a style="float: left" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="img/cc.png"></a>
+<p>
+<br />
+<br />
+      © 2017  -
+        <a href="https://github.com/linamontano">Lina Montaño</a>
+    </p>
 
-It doesn't matter if you're part of a design team communicating with a different department, a social media manager for your business, or anything in between. Emojis help convey tone and intent, both of which are frequently lost in translation when communicating online.
-
-There are now entire generations that grew up and are growing up with emojis as a given. Emojis are no longer stylistic extras that you can ignore, but instead are an integral part of how many online users communicate every single day. Spend a few minutes clicking around Facebook or Twitter if you're still skeptical! You won't be able to scroll more than a page without seeing emojis aplenty.
-
-So next time you're considering a social media overhaul or searching for a brand new angle with your online marketing campaigns, find the perfect emoji here on our emoji cheat sheet!
+  </footer>
+  </center>

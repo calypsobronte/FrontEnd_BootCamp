@@ -27,7 +27,9 @@
   git config --global user.email "<Y Su correo electronico>"
   ```
     *  ###### Crear una cuenta en GitHub
-    Si ya tienes una cuenta en GitHub puedes saltar al siguiente paso, pero si no tienes una cuenta en GitHub, puedes crear una nueva cuenta con su correo electronico en el siguiente link: [Registrate :smile_cat:][]:point_down:![Registro][Register]
+    Si ya tienes una cuenta en GitHub puedes saltar al siguiente paso, pero si no tienes una cuenta en GitHub, puedes crear una nueva cuenta con su correo electronico en el siguiente link: [Registrate :octocat:][]:point_down:
+
+      ![Registro][Register]
 
   *  ###### Configuración de la  SSH Keys
       * Para crear la llave privada o publica se utilizara la consola con los siguientes comandos:
@@ -61,18 +63,27 @@
     NotePad ++
     ```
 
-  *  ###### Instalar NPM
-  Instalaremos el npm para realizar el reto en parejas en el cual se estara integrando con  la pagina [webtask.io][] que nos generara una URL que podemos utilizarla o compartirla.
+  *  ###### Instalar NPM para utilizar WebTask
+  Instalaremos el npm para realizar el primer ejercicio y  el reto en parejas en el cual se estara integrando con  la pagina [webtask.io][] que nos generara una URL que podemos utilizarla o compartirla.
 
     Comandos:
-    >Npm i -g wt-cli
-    >>Wt int `<su correo>`
-    >>>Wt edit
-    >>>>Wt ls
+    >npm i -g wt-cli: instalación del webtaks
+    >>wt -h: lista de los comandos que hay disponibles en webtask
+    >>>wt ls: lista de  webtask que estan creadas
+    >>>>wt init `<su correo con el cual se Registro en webtask>`
+    >>>>>wt edit: (mirar que hace este)
+    >>>>>>wt create y nombre archivo subirlo desde la PC
 
     Luego utilizaremos webtask que sera uno de los primeros acercamientos a un editor de codigo.
 
     ![webtask][webtask]
+    Puedes ingresar a esta plataforma asociandolo con `GitHub`, `Facebook`, `Google`, `Microsoft`.
+
+    ![Login webtask][webtask_login]
+    Nuestra primera vista::point_down:
+
+    ![Edit webtask][webtask_edit]
+
 
 ----------------------------------------------------------------
 
@@ -110,7 +121,7 @@
 
               Esto es un h2
 
-              \-------------
+              -------------
         * **Estilo de Texto:**
             <!-- Estilos para texto plano -->
             El texto puede ser fácilmente estilizado con italicas, negritas o tachado con símbolos: Asterisco `(*)` , Guión bajo `( _ )` , `(~)`.
@@ -130,6 +141,13 @@
             *__¡O este texto!__* = \*\__¡O este texto!\__*
 
             ~~Texto tachado.~~ = \~~Texto tachado.~~
+
+            En `HTML` equivale:
+            ```bash
+            Negrita <b>
+            Cursiva <i>
+            Tachado <> (Falta)
+            ```
 
         * **Salto de linea:**
         En algun momento necesitamos hacer un salto de linea para empezar otro parrafo en el cual se podra utilizar `<br />`.
@@ -152,7 +170,102 @@
         >
         > Regreso al primer nivel.
 
-        * **Listas:** Las listas desordenadas se hacen usando asteriscos `*`, símbolos de más `+`, o guiones `-`.
+        * **Listas:**
+
+        Las ***listas desordenadas*** se hacen usando asteriscos `*`, símbolos de más `+`, o guiones `-`.
+              * Item 1
+              * Item 2
+                * Item 2.1
+                * Item 2.2
+
+                o
+              + Item 1
+              + Item 2
+                + Item 2.1
+                + Item 2.2
+
+              o
+              - Item 1
+              - Item 2
+                - Item 2.1
+                - Item 2.2
+
+          * Item 1
+          * Item 2
+            * Item 2.1
+            * Item 2.2
+
+            o
+          + Item 1
+          + Item 2
+            + Item 2.1
+            + Item 2.2
+
+           o
+          - Item 1
+          - Item 2
+            - Item 2.1
+            - Item 2.2<br /><br />
+
+      Las ***listas ordenada*** se hacen usando  un número seguido de un punto `1.`.
+      1. Item 1
+      2. Item 2
+      3. Item 3
+
+      O tambien lo puedes poner con un solo número y el automaticamente los ordenara `1. 2. 3.`
+      1. Item 1
+      1. Item 2
+      1. Item 3
+
+            ```bash
+            1. Item 1
+            1. Item 2
+            1. Item 3
+            ```
+
+      También puedes usar ***sub-listas***
+      1. Item 1
+      2. Item 2
+      3. Item 3
+            * Sub-item
+            * Sub-item
+      4. Item 4
+
+              ```bash
+              1. Item 1
+              2. Item 2
+              3. Item 3
+                    * Sub-item
+                    * Sub-item
+              4. Item 4
+              ```
+
+      En `HTML` Las listas `Oredenas` y `desordenadas` equivale a :
+      ```bash
+      desordenadas <ul>Hi!<li>
+      ```
+        * **Enlaces:**
+
+          Se utilizan corchetes `[]` para el texto y paréntesis `()` para el enlace. Existen dos formas de hacer los links una de forma larga otra de forma corta.
+
+          * ***Links URL***
+
+              *Forma larga*: `[texto](http://www.hola.co)`
+
+              *Forma corta*: `[texto][]` y en lo ultimo de nuestro documento cuando este programando ponermos lo sigiuente:`[texto]: http://www.hola.co "Este es un comentario"`
+          * ***Imagenes***
+
+            *Forma larga*: `![Texto de la imagen](/ruta/imagen.jpg)`
+
+            *Forma corta:* `![Texto de la imagen][imagen]`y en lo ultimo de nuestro documento cuando este programando ponermos lo sigiuente:`[imagen]: /ruta/imagen.jpg "Comentario a la imagen"`
+
+          Si deseas ver mas  ejemplos detallados sobre lo antes mencinado :point_right: [Ingresa ¡Aca!][]
+
+          En `HTML` los enlaces de `las URL` y `las imagenes` equivale a :
+          ```bash
+          URL <a href="http://www.hola.co"></a>
+          Imagenes <img src="../ruta/imagen.jpg">
+          ```
 
   ##### Scrum
  *  ###### ¿Que es Scrum?  
@@ -204,14 +317,15 @@
 
 <!-- Enlaces de Webs -->
 [Descargar Git ¡Aca!]:https://git-scm.com/downloads "Descargar Git"
-[Registrate :smile_cat:]: https://github.com/join?source=header-home "Registrarse en GitHub"
+[Registrate :octocat:]: https://github.com/join?source=header-home "Registrarse en GitHub"
 [SSH and GPG Keys]: https://github.com/settings/keys "SSh Keys"
-[Node.js]: https://nodejs.org/download/ "Descargar Node.js"
+[Node.js]: https://nodejs.org/es/download/ "Descargar Node.js"
 [Webtask.io]: https://webtask.io/ "Web Task"
 [Aaron Swartz]: https://es.wikipedia.org/wiki/Aaron_Swartz "El Hijo del Internet"
 [John Gruber]: https://en.wikipedia.org/wiki/John_Gruber "Creador de MarkDown"
+[Ingresa ¡Aca!]: ejemplo_links.md "Ejemplos de Enlaces"
 
-
+<!--<>-->
 <!-- Enlaces de Imagenes -->
 [consola]: /img/Git_Bash.png  "Abrir Consola Git Bash"
 [Consola Git Bash]: /img/Consola_git_bash.JPG "Consola Git Bash"
@@ -219,3 +333,5 @@
 [Configured the SSH Keys]: /img/Git_Bash.JPG "Configuración del SSH Keys"
 [SSH Keys]: /img/Git_SSH_keys.png "LLave Privada o Publica"
 [webtask]: /img/webtask.jpg "Web Task"
+[webtask_login]: /img/webtask_login.JPG "Ingreso a la plataforma de WebTask"
+[webtask_edit]: /img/webtask_edit.JPG "Nuestra primera vista del editor"
