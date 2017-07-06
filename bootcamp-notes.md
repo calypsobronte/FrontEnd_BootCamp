@@ -232,14 +232,14 @@
             * Sub-item
       4. Item 4
 
-              ```bash
-              1. Item 1
-              2. Item 2
-              3. Item 3
-                    * Sub-item
-                    * Sub-item
-              4. Item 4
-              ```
+          ```bash
+          1. Item 1
+          2. Item 2
+          3. Item 3
+                * Sub-item
+                * Sub-item
+          4. Item 4
+          ```
 
       En `HTML` Las listas `Oredenas` y `desordenadas` equivale a :
       ```bash
