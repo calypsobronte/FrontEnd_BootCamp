@@ -71,8 +71,8 @@
     >>wt -h: lista de los comandos que hay disponibles en webtask
     >>>wt ls: lista de  webtask que estan creadas
     >>>>wt init `<su correo con el cual se Registro en webtask>`
-    >>>>>wt edit: (mirar que hace este)
-    >>>>>>wt create y nombre archivo subirlo desde la PC
+    >>>>>wt edit: carga la pagina
+    >>>>>>wt create y nombre archivo subirlo desde la PC o en la nube
 
     Luego utilizaremos webtask que sera uno de los primeros acercamientos a un editor de codigo.
 
@@ -87,14 +87,18 @@
 
 ----------------------------------------------------------------
 
-
 * #### 28 Junio del 2017
-   ##### MarkDown
+
+   ##### Scrum
+   *  ###### ¿Que es Scrum?
+
+  ##### MarkDown
 
   Markdown es un lenguaje de _formato ligero_ que facilita la creación de elementos básicos de **HTML** (creado por [John Gruber][] en 2004 y ayudado por [Aaron Swartz][]) , con una *sintaxis fácil de usar* ya sea para crear formularios en nuestros editores o manejarlo directamente en  la  plataforma GitHub. ay varias apps moviles que utiliza esta sintaxis para darle una mejor experiencia a sus usuarios entre ellas esta: ** WhatsApp, Twitter **
 
   *  ###### ¿Que es MarkDown?
   Herramienta de conversión de texto plano a Html, dando formato a las palabras como hacerlas negritas o itálicas, agregar imágenes, y creando listas o tablas. En general, Markdown es sólo un texto normal con un poco de caracteres no-alfabeticos como # o \*.
+  Mas informacion. [Guia Markdown][]
 
     Tiene **licencia BSD**, es decir, se distribuye libremente
       *  ###### Ventajas Markdown
@@ -267,11 +271,86 @@
           URL <a href="http://www.hola.co"></a>
           Imagenes <img src="../ruta/imagen.jpg">
           ```
+  *  ###### Dillinger.io
+  nuestro primer acercamiento a la sintaxis de *Markdown* lo haremos con el editor [dillinger.io][].
 
-  ##### Scrum
- *  ###### ¿Que es Scrum?  
+    Nuestro primer ejemplo hecho en este editor online con Markdown
+    ```bash
+    # Mi biografia
+    Mi nombre es **Lina** soy de _medellin_.
+    Lo que mas me gusta es:
 
+    1. Programar
+    2. dibujar
+    3. Futbol
 
+    Esta es mi foto:
+    ![Foto de Lina](https://pbs.twimg.com/profile_images/848381649511481344/EDqmCcUY_400x400.jpg)
+
+    Este es mi [Twitter](https://twitter.com/calypso_bronte)
+    ```
+    ![dillinger.io][dillinger]
+
+*  ##### Manejo de la terminal y comandos bash
+
+|Comando| Descripción |
+| ------ | ----------- |
+| ls | Lista los contenidos  que esta en la carpeta que abrimos.|
+| ls -l | Lista los contenidos que esta en la carpeta de una forma mas larga y con detalles.|
+| ls -a | Lista los contenidos que esta en la carpeta incluyendo archivos ocultos.|
+|||
+| cd | nos redirecciona a la raiz del pc |
+|cd (nombre de la carpeta)|nos permite ingresar a la carpeta que necesitamos |
+| cd .. | retrocede a la carpeta anterior|
+| cd - | Cambia de carpeta a la que sigue. |
+|||
+| mkdir (nombre de la carpeta) | crea una nueva carpeta sobre la principal|
+|||
+| rm -r (nombre de la carpeta) | Elimina la carpeta.|
+| rm -rf (nombre de la carpeta) | Elimina la carpeta de una forma más forzada.|
+|||
+| cp (nombre archivo) (nombre archivo1) | Copia (nombre archivo) a (nombre archivo1).|
+| cp -r (nombre de la carpeta)  (nombre de la carpeta1) | Copia (nombre de la carpeta)  a (nombre de la carpeta1) . |
+|||
+| rm (nombre archivo) | Remueve el archivo "file".|
+| rm -f (nombre archivo) | Remueve el archivo "file" (Forzado).|
+|||
+| mv | Renombra el archivo o mover el archivo a otro destino diferente al actual|
+| touch (nombre archivo) | crear un archivo ya sea .js .md .html .css|0.
+|Ctrl + U|borra una línea.|
+| more (nombre archivo)) | salir del archivo y tiene algo de similitud con el cat.|
+|cat | abrir el archivo en la terminal |
+|echo | imprimir un codigo |
+|tab|podemos utilizarla para autocomplementar lo que estos digitando|
+|pwd|Nos permite mirar en que enlace podemos hacer|
+----
+* ##### Manejo de Comando Git y Control de versiones
+  * Estados del Git:
+    1. Archivo creado en la PC
+    ```bash
+     ~/documents/code/FrontEnd_BootCamp (master)
+    ```
+    2. <!--mirar si es staying-->Agregar lo que ya hemos hecho
+    ```bash
+    ~/documents/code/FrontEnd_BootCamp (master)
+$ git add .
+```
+    3. Realizar el comentarios para saber si ha subido correctamente a nuestro repositrio.
+    ```bash
+    ~/documents/code/FrontEnd_BootCamp (master)
+    $ git commmit -m "Comentario"
+    ```
+    4. Por ultimo la subida a los archivos al repositorio con el `master`
+    ```bash
+    ~/documents/code/FrontEnd_BootCamp (master)
+    $ git push origin2 master
+    ```
+
+| Comando | Descripción |
+| ------:| -----------:|
+| git init  | inicio del majeo del Git. |
+| git status | estado de los archivos. |
+| ext    | extension to be used for dest files. |
 
 
 =================================================================
@@ -281,6 +360,7 @@
 * #### 4 Julio del 2017
    #####
   *  ######
+
 
 
 
@@ -325,6 +405,9 @@
 [Aaron Swartz]: https://es.wikipedia.org/wiki/Aaron_Swartz "El Hijo del Internet"
 [John Gruber]: https://en.wikipedia.org/wiki/John_Gruber "Creador de MarkDown"
 [Ingresa ¡Aca!]: ejemplo_links.md "Ejemplos de Enlaces"
+[dillinger.io]: http://dillinger.io/ "Editor MarkDown"
+[Guia MarkDown]: https://guides.github.com/features/mastering-markdown/
+"Guia Git para MarkDown"
 
 <!--<>-->
 <!-- Enlaces de Imagenes -->
@@ -336,3 +419,4 @@
 [webtask]: /img/webtask.jpg "Web Task"
 [webtask_login]: /img/webtask_login.JPG "Ingreso a la plataforma de WebTask"
 [webtask_edit]: /img/webtask_edit.JPG "Nuestra primera vista del editor"
+[dillinger]: img\dillinger.JPG "Editor online dillinger.io"
