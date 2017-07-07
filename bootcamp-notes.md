@@ -333,8 +333,8 @@
     2. <!--mirar si es staying-->Agregar lo que ya hemos hecho
     ```bash
     ~/documents/code/FrontEnd_BootCamp (master)
-$ git add .
-```
+    $ git add .
+    ```
     3. Realizar el comentarios para saber si ha subido correctamente a nuestro repositrio.
     ```bash
     ~/documents/code/FrontEnd_BootCamp (master)
