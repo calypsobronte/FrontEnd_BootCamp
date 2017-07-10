@@ -350,7 +350,9 @@
 | ------:| -----------:|
 | git init  | inicio del majeo del Git. |
 | git status | estado de los archivos. |
-| ext    | extension to be used for dest files. |
+| touch    | crear archivo en cualquiera de las extenciones que existen. |
+|git add .|con esto le damos la orden que se va a gregar lo que se ha echo en nuetra carpeta|
+|git commit -m "comentarios"| le damos |
 
 
 =================================================================
