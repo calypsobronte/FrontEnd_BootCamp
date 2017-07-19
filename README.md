@@ -18,7 +18,7 @@ Codigo realizados en el BootCamp
  * [Hoja de Vida](curriculum-vitae.md "Curriculum Vitae")
 
 * #### HTML
- * [Hoja de vida](index.html "Curriculum Vitae")
+ * [Hoja de vida](https://linamontano.github.io/FrontEnd_BootCamp/ "Curriculum Vitae")
 
 * #### JS
 
