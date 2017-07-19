@@ -1,8 +1,13 @@
+<p align="center">
+  <a>
+    <img width=100% src="/img/banner.jpg">
+  </a>
+</p>
+
 # Front-End Bootcamp
 
-Ejercios realizados en el BootCamp
+Codigo realizados en el BootCamp
 
-## Primera semana
 
 * #### WebTask
  * [Pagina Web en Parejas]("Web Page")<!--Falta relizar la pagina-->
@@ -14,6 +19,11 @@ Ejercios realizados en el BootCamp
 
 * #### HTML
  * [Hoja de vida](index.html "Curriculum Vitae")
+
+* #### JS
+
+* #### JQuery
+
 
 
 

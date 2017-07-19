@@ -1,6 +1,6 @@
 # Notas del BootCamp - FrontEnd
 
-## Semana del 27 de junio al 1 de julio
+## Semana **`1`** del 27 de junio al 1 de julio `(Introducción a: Git y GitHub, Webtask, SCRUM, Markdown, HMTL5 y CSS3)`
 
 * #### 27 Junio del 2017 `(Inicio del BootCamp Front-End)`
    ##### Preparacion del ambiente
@@ -316,13 +316,15 @@
 | rm -f (nombre archivo) | Remueve el archivo "file" (Forzado).|
 |||
 | mv | Renombra el archivo o mover el archivo a otro destino diferente al actual|
-| touch (nombre archivo) | crear un archivo ya sea .js .md .html .css|0.
+| touch (nombre archivo) | crear un archivo ya sea .js .md .html .css|
 |Ctrl + U|borra una línea.|
 | more (nombre archivo)) | salir del archivo y tiene algo de similitud con el cat.|
 |cat | abrir el archivo en la terminal |
 |echo | imprimir un codigo |
 |tab|podemos utilizarla para autocomplementar lo que estos digitando|
 |pwd|Nos permite mirar en que enlace podemos hacer|
+|Fleha arriba|Comandos anteriores|
+|Flecha abajo|comandos siguientes|
 ----
 * ##### Manejo de Comando Git y Control de versiones
   * Estados del Git:
@@ -354,17 +356,208 @@
 |git add .|con esto le damos la orden que se va a gregar lo que se ha echo en nuetra carpeta|
 |git commit -m "comentarios"| le damos |
 
+----------------------------------------------------------------
+
+* #### 29 Junio del 2017
+
+   ##### Topicos
+   *  ###### ¿Que es topicos  ?
+
+  ##### Estructura basica HTML
+```
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <head>
+      <body>
+
+      </body>
+</html>
+```
+
+----------------------------------------------------------------
+
+  * #### 30 Junio del 2017
+
+     #####
+     *  ###### ¿Que es ?
+
+    #####
+----------------------------------------------------------------
+
+  * #### 1 Julio del 2017
+
+   #####
+   *  ###### ¿Que es ?
+
+  #####
 
 =================================================================
 
-## Semana del 4 al 8 de julio
+## Semana **`2`** del 4 al 8 de julio `(fundamentos de JavaScript, CSS,  y HTML semántico)`
 
 * #### 4 Julio del 2017
-   #####
-  *  ######
+   ##### Introduccion a JavaScript
+  *  ###### ¿Que es JavaScript?
+  *  ###### ¿Que es una variable?
+  *  ###### ¿Que es un algoritmo?
+  *  ###### ¿Que es una funcion?
+
+  ***Componentes basicos de JavaScript***
+`type of var` <!--gives the var type-->  
+`var suma = 2 + 5` <!--make operations within the declaration-->  
+`var a` <!--undefined variable -->
+`var lista = []` <!--define an array-->  
+  ***Objetos***     
+```
+var human = {
+    eyes: "blue",
+    skin: "white",
+    age: 20,
+    isOlder:false,
+    city: Medellin,
+    country:Colombia,
+}
+```
+
+`human.eyes or human["eyes"]`
+
+```
+var context{
+    .query{
+        name = 'David'
+        pet = 'Dog'
+    }
+}
+```
+
+  ***funcion***
+```
+function suma(x + y){
+    return x + y;
+}
+```
+`suma();`  
+`var miSuma = suma(5, 2);`  
+`var Suma = suma();`
+
+```
+var humano = {
+    nombre: 'Guillermo'
+    caminar: function(){
+        consolo.log('Caminando...');
+    },
+    sumar: function(x,y){
+        return x + y;
+    }
+}
+```
+`humano.sumar(3,6)`  
+`humano.caminar()`
+
+***Ejercicio***
+Hacer la estructura de HTML con todos los componentes
+CSS-> page, sidebar, content, footer, column
+
+* #### 5 Julio del 2017
+   ##### Repaso del dia 4 de julio
+   Algoritmo instrucciones para sumar
+   Pseudocodigo variable x o y
+   Funtion suma x + y
+   Hay muchas metodologias para empezar haceer sceudocodio para poderse
+   La sintaxis cambia
+   Variables
+   funciones
+   Tipos que pueden ser nativos
+   Declara  la vaariable ques sedefine como tipo tipado son numeros
+
+----------------------------------------------------------------
+
+* #### 6 Julio del 2017
+   ##### Introduccion a JavaScript
+  *  ###### ¿Que es JavaScript?
+----------------------------------------------------------------
+
+* #### 7 Julio del 2017
+   ##### Introduccion a JavaScript
+  *  ###### ¿Que es JavaScript?
+
+----------------------------------------------------------------
+
+* #### 8 Julio del 2017
+   ##### Introduccion a JavaScript
+  *  ###### ¿Que es JavaScript?
+
+=================================================================
+
+## Semana **`3`** del 10 al 15 de julio `(JSON, DOM, CSS Advanced Positioning, Responsive Design, SS Grid Layout,Web Typografy, Introduction to Scrum, GitHub, Open Source, jQuery)`
+
+* #### 10 Julio del 2017
+   ##### JSON
+  *  ###### ¿Que es JSON?
+  *  ###### Ejercicio de Humanos.JSON
+      Crear la estructur a de JSON con la lista de `Humanos` donde
+      ```
+      5 humanos uno de ellos tener amigos
+Lista
+  humano
+         nombre
+	Edad
+	Animales (perros gatos peces)
+	Amigos boolean
+Lista de amigos
+      ```
+
+  ##### Errores que aparece en Git y Clonar repositorio de Guillo
+ *  ###### Error en Git Local o repositorio de GitHub
+
+ *  ###### Clonar repositorio de Guillo
+     ```
+     ~/documents/code (master)
+     $ git clone https://github.com/glrodasz/frontend-bootcamp.git Renombrar con otro nombre.
+     ````
+  ##### DOM (Document Object Model)
+ *  ######
+
+ ----------------------------------------------------------------
+
+ * #### 11 Julio del 2017
+    ##### 
+   *  ###### ¿Que es ?
+
+----------------------------------------------------------------
+
+  * #### 12 Julio del 2017
+  #####
+ *  ###### ¿Que es ?
+
+----------------------------------------------------------------
+
+ * #### 13 Julio del 2017
+    #####
+   *  ###### ¿Que es ?
+
+----------------------------------------------------------------
+
+* #### 14 Julio del 2017
+ #####
+*  ###### ¿Que es ?
+
+----------------------------------------------------------------
+
+ * #### 15 Julio del 2017
+    #####
+   *  ###### ¿Que es ?
 
 
+=================================================================
 
+## Semana **`4`** del 17 al 22 de julio `()`
+
+ * #### 17 Julio del 2017
+    #####
+   *  ###### ¿Que es ?
 
 
 
@@ -408,8 +601,7 @@
 [John Gruber]: https://en.wikipedia.org/wiki/John_Gruber "Creador de MarkDown"
 [Ingresa ¡Aca!]: ejemplo_links.md "Ejemplos de Enlaces"
 [dillinger.io]: http://dillinger.io/ "Editor MarkDown"
-[Guia MarkDown]: https://guides.github.com/features/mastering-markdown/
-"Guia Git para MarkDown"
+[Guia MarkDown]: https://guides.github.com/features/mastering-markdown/ "Guia Git para MarkDown"
 
 <!--<>-->
 <!-- Enlaces de Imagenes -->
