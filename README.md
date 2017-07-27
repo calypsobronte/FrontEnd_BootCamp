@@ -1,6 +1,6 @@
 <p align="center">
   <a>
-    <img width=100% src="/img/banner.jpg">
+    <img width=100% src="./img/banner.jpg">
   </a>
 </p>
 
@@ -10,15 +10,15 @@ Codigo realizados en el BootCamp
 
 
 * #### WebTask
- * [Pagina Web en Parejas]("Web Page")<!--Falta relizar la pagina-->
+  * [Pagina Web en Parejas]("Web Page")<!--Falta relizar la pagina-->
 
 
 * #### Markdown
- * [Notas del BootCamp](bootcamp-notes.md "BootCamp Notes")
- * [Hoja de Vida](curriculum-vitae.md "Curriculum Vitae")
+  * [Notas del BootCamp](/Notes/bootcamp-notes.md "BootCamp Notes")
+  * [Hoja de Vida](/Curriculum-Vitae-Markdown/curriculum-vitae.md "Curriculum Vitae")
 
 * #### HTML
- * [Hoja de vida](https://linamontano.github.io/FrontEnd_BootCamp/ "Curriculum Vitae")
+  * [Hoja de vida](https://linamontano.github.io/FrontEnd_BootCamp/ "Curriculum Vitae")
 
 * #### JS
 

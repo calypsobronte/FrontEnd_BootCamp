@@ -111,22 +111,22 @@
         <!-- Headers -->
         crea headers HTML fácilmente precediendo al texto con una serie de símbolos de números `(#)`.
 
-              # Esto es un <h1>
-              ## Esto es un <h2>
-              ### Esto es un <h3>
-              #### Esto es un <h4>
-              ##### Esto es un <h5>
-              ###### Esto es un <h6>
+          # Esto es un <h1>
+          ## Esto es un <h2>
+          ### Esto es un <h3>
+          #### Esto es un <h4>
+          ##### Esto es un <h5>
+          ###### Esto es un <h6>
 
-          **Nota:** Markdown también nos proveé con dos alternativas para indicar **h1** y **h2**
+      **Nota:** Markdown también nos proveé con dos alternativas para indicar **h1** y **h2**
 
-              Esto es un h1
+          Esto es un h1
 
-              =============
+          =============
 
-              Esto es un h2
+          Esto es un h2
 
-              -------------
+          -------------
         * **Estilo de Texto:**
             <!-- Estilos para texto plano -->
             El texto puede ser fácilmente estilizado con italicas, negritas o tachado con símbolos: Asterisco `(*)` , Guión bajo `( _ )` , `(~)`.
@@ -178,22 +178,23 @@
         * **Listas:**
 
         Las ***listas desordenadas*** se hacen usando asteriscos `*`, símbolos de más `+`, o guiones `-`.
-              * Item 1
-              * Item 2
-                * Item 2.1
-                * Item 2.2
 
-                o
-              + Item 1
-              + Item 2
-                + Item 2.1
-                + Item 2.2
+          * Item 1
+          * Item 2
+            * Item 2.1
+            * Item 2.2
 
-              o
-              - Item 1
-              - Item 2
-                - Item 2.1
-                - Item 2.2
+            o
+          + Item 1
+          + Item 2
+            + Item 2.1
+            + Item 2.2
+
+          o
+          - Item 1
+          - Item 2
+            - Item 2.1
+            - Item 2.2
 
           * Item 1
           * Item 2
@@ -222,11 +223,11 @@
       1. Item 2
       1. Item 3
 
-            ```bash
-            1. Item 1
-            1. Item 2
-            1. Item 3
-            ```
+          ```bash
+          1. Item 1
+          1. Item 2
+          1. Item 3
+          ```
 
       También puedes usar ***sub-listas***
       1. Item 1
@@ -275,7 +276,7 @@
   nuestro primer acercamiento a la sintaxis de *Markdown* lo haremos con el editor [dillinger.io][].
 
     Nuestro primer ejemplo hecho en este editor online con Markdown
-    ```bash
+    ```Markdown
     # Mi biografia
     Mi nombre es **Lina** soy de _medellin_.
     Lo que mas me gusta es:
@@ -347,6 +348,14 @@
     ~/documents/code/FrontEnd_BootCamp (master)
     $ git push origin2 master
     ```
+  * Eliminar carpeta del repositorio (GitHub)
+
+    ```bash
+    rm -rf (Carpeta)
+    git add --all
+    git commit -m "Commit"
+    git push origin2 master
+    ```
 
 | Comando | Descripción |
 | ------:| -----------:|
@@ -361,104 +370,399 @@
 * #### 29 Junio del 2017
 
    ##### Topicos
-   *  ###### ¿Que es topicos  ?
+   *  ###### ¿Que es topicos ?
+   *  ###### ¿Que es HTML entities?
 
-  ##### Estructura basica HTML
-```
-<!DOCTYPE html>
-<html>
-    <head>
+    ##### Estructura basica HTML
+    ```Html
+    <!DOCTYPE html>
+    <html>
+        <head>
 
-    <head>
-      <body>
+        <head>
+          <body>
 
-      </body>
-</html>
-```
+          </body>
+    </html>
+    ```
+    ##### Atributos del HTML
+    ```Html
+    <html lang="en"> (especifica que mi pagina va a estar en un idioma determinado)
+    <meta charset="UTF-8"/> (CAracteres especiales)
+    ```
+    ##### Elementos de  HTML
+    ```Html
+    * <p> </p> (texto, parrafo)
+    * <br />  (Salto de línea)
+    * <hr /> (Línea horizontal)
+    ```
+    ##### Caracteres reservados en HTML
+    ```Html
+      < , > , &
+    ```
+    ##### Estado de los `Links` en HTML
+    * ###### Link Absoluto:
+      Este nos redirigue a otra pagina.
+      * ###### Esquema Absoluto
+        * Esquema (Schema) = `"https"`
+        * Subdominio (Subdominio) = `"www"`
+        * Dominio (Dominio) = Link de la página `"google"`
+        * Camino (Path) = carpeta donde esta alojada `"imagen"`
+    ```Html
+    atributo="valor"
+    <a href="https://www.google.com"> Google <a/>
+    ```
+      * ###### Esquema Relativo
+        * imagen: Nombre de la carpeta donde esta alogada
+        * index.html: donde se esta diriguiendo
+    ```Html
+    atributo="valor"
+    <a href="https://www.google.com/imagen/index.html"> imagen <a/>
+    ```
+      * ###### Esquema a la Raiz
+        * Servidor local, donde con el `.` punto se muestra cuantas carpetas se tiene para avanzar.
+    ```Html
+    atributo="valor"
+    <a href="../imagen/index.html"> imagen <a/>
+    ```
+
+    ##### Tipo de listados en HTML
+    ```Html
+    <ul> </ul> (lista no ordenada)
+    <ol> </ol> (lista  ordenada)
+    <li> </li> (item de la lista)
+    <div> </div> (bloque)
+    ```
+    ##### Imagenes en HTML
+    Imagenes que pueden estar local o por medio de un servidor en el cual soporta cualquier tipo de formato como:
+    1. jpg `fotos`
+    2. gif `imagen con movimiento`
+    3. png `imagen con trasparencia`
+    4. svg `imagen realizada con vectores`
+    ```Html    
+      <img src=""> (Estructura)
+      <img src="" width="100px"> (Tamaño)
+      <img alt="Descripción de la imagen"> (Leyenda)
+    ```     
+
+    Quieres saber mas en [Html 5 Doctor][] encontras mas información.
 
 ----------------------------------------------------------------
 
   * #### 30 Junio del 2017
 
-     #####
-     *  ###### ¿Que es ?
+     ##### CSS `Estilos`
+     *  ###### ¿Que es CSS ?
 
-    #####
+      ***Nota:*** CSS y HTML no son lenguejes de programacion  Forma corta de colores `#FFF` una forma mas abreviada `#F00`
+
+      ###### CSS Rules
+        - Selector
+        - Propiedad
+        - Valor
+     ```CSS
+       selector
+       {
+          propiedad: valor;
+        }
+        ejemplo:
+        body
+        {
+           color: #F00;
+         }
+     ```
+      ###### Tipos de estilo `Style`
+      Existe tres fomas de realizar los estilos en nuestra plantilla:
+
+       1. Adentro del  `<head> </head>` se pondara la etiqueta `<style> </style>`
+      ```Html
+          <style>
+          body{
+            color: #031634;
+          }
+          </style>
+      ```
+      2. Caundo estamos creando nuestros codigo podemos ponerle tambien estilo en linea dentro de la etiqueta
+      ```Html
+          <p style="color:#031634;">estilo</p>
+      ```
+
+      3. Tambien podemos crear una carpeta donde se aloge todos los estilos, en el cual conllevara un archivo con extencion `.css` donde lo podemos utilizar en toda nuestra pagina `html` con la etiqueta `<link/>`
+      ```Html
+          <link rel="stylesheet" type="text/css" href="style/main.css">
+      ```
+
+      ![Style][style]
+
+      ###### Unidades de medidad `Pixeles`
+      Existen diferentes tipo de medidas para las diferentes acciones que se va a realizar como: `px`, `em`, `vh`, `%`.
+      ```Bash
+      em: es el tamaño de la m de la base del texto, es decir el doble de px 14px; = 1em, 2em = 28px;
+      ```
+      ```Bash
+      vh: Hace referencia a la centésima parte de la altura del viewport
+      ```
+      ```Bash
+      px: pixeles o unidad de medida
+      ```
+      ```Bash
+      %: toma el tamaño por porcentaje asignado relativamente por el contenedor padre
+      ```
+      ###### Elementos bloques y en línea
+      ***Los Elementos en bloques*** ocupan todo el `width` de su contenedor padre. Entre dos Elementos bloques no se le suman los `Margin` ya que siempre va a prevalecer el mayor margen en el cual solo tomara uno.
+      Miestras que los ***Elementos en linea*** ocupa todo el `width` de su contenedor, llegado el caso que se utilice el width no lo va a reconocer ya que maneja su propia dimension
+
+      ###### Modelo de caja
+      En el `HTML` siempre vamos a diagramar, como si tuvieramos un conjunto de cajas, donde cada caja siempre va ha tener su contenido, un padding, un borde, un margin por todos los costados de la caja.
+      ```Bash
+      Margin: muestra los bordes hacia fuera.
+      Padding: muetra los borde hacia adentro.
+      ```
+
+      ###### Resetear estilos
+      Para resetear los estilos que viene por default en los navegadores como lo es el `padding` y el `margin` se utiliza el selector `*`.
+      ```CSS
+      *{
+        margin:0;
+        padding:0;
+      }
+      ```
+      los elementos viene por default con la  propiedad ***content-box*** donde va a sumar el tamaño del contenido de los padding y los borders. Si se desea quitar esto se puede hacer con la propiedad ***box-sizing*** en el cual no lo va a sumar y va a coger el tamaño del width.
+      ```CSS
+      {
+        Box-sizzing: border-box;
+      }
+      ```
+      ###### Selector de Clases
+      los selectores son usados por etiquetas, clases mas los id.
+      ***Etiqueta:***
+      ```CSS
+      p {
+            propiedad: valor;
+      }
+      ```
+      ***Clase:*** se le asigna un punto segido del nombre que le vamos a poner a la clase `.nombreClase`.<br />
+      `CSS`
+      ```CSS
+      .nombreClase {
+            propiedad: valor;
+      }
+      ```
+      `HMTL`
+      ```Html
+      <p class="nombreClase">texto</p>
+      ```
+      ***Id:*** se  le asigna con el simbolo numeral mas el nombre del id.<br />
+      `CSS`
+      ```CSS
+      #nombreClase {
+            propiedad: valor;
+      }
+      ```
+      `HMTL`
+      ```Html
+      <p id="nombreClase">texto</p>
+      ```
+      ###### Pseudo-Clases
+      `:link` = un link que nunca ha sido visitado
+
+      `:visited` = el estado cuando el link ya ha sido visitado
+
+      `:hover` = el estado cuando el puntero del mouse está sobre el link
+
+      `:active` = el estado cuando el link está siendo presionado
+
+      `:focus` = un campo de formulario seleccionado
+
+      `:empty` = selecciona elementos vacios
+
+      `:not()` = selecciona a los elementos que no coincidan con el selector pasado como parametro
+
+      `:selection` = para aplicar estilos a la seleccion
+
+      `:target` = selecciona el destino de un enlace interno
+
+      ```CSS
+      p {
+            propiedad: valor;
+      }
+      ```
+      ###### Especifidad
+      Tiene la importancia de las reglas declaradas en el `CSS`; `Specifity Calculator` es una herramienta que permite calcular la importancia de la reglas en `CSS`
+
+***Nota -2:*** no se puede usar `id` en `CSS` cuando se este en la *Especifidad*
+`!important `tiene la maxima Especifidad  donde los ultimos seran los primeros.      
+***Nota-1:*** para calcular el tamaño de un elemento en `css`  se hace con:
+```CSS
+width:calc (100%-100px);
+```
 ----------------------------------------------------------------
 
   * #### 1 Julio del 2017
+     ##### Explicacion
+      ***Elementos en Bloque***
+      - Cuando los elementos son de tipo bloque no tienen encuenta los espacios que se generan entre las etiquetas , mientras que `inline` o `inline-block` tiene encuenta los espacios y el navegador se va hacer visible y se va  a redenderizar.
 
-   #####
-   *  ###### ¿Que es ?
+      ***Columnas mas los perfijos***
+      - Podremos tener multiples columnas con o sin  texto  para esto debemos ponerlos asi:
+        * `column-count:` Numero de columanas que se desea tener
+        * `column-gap:`Espacio entre columnas
+        * `Prefijos:` se utilizaran estos prefijos ***`-moz y -webkit`*** para que el navegador pueda reconocerlos sin ningun tipo de errores ya que estas propiedades son muy nuevas en los unicos navegadores que no funcionan es `Opera` y `Internet Explore 9`
+        ```CSS
+        .ColumnText{
+        -moz-column-count: 5;
+        -moz-column-gap: 1.5em;
+        -webkit-column-count: 5;
+        -webkit-column-gap: 1.5em;
+        column-count:5;
+        column-gap:1.5em
+        }
+        ```
+      ***Otros elementos***
+      * `Width:` elemento bloque `block-level`
+      * `Max-Width:` para los dispositivos moviles
+      * `Box-model:` Modelo de caja `box-sizing`
+      * `Float:` Flotar(envolver imagenes con texto)
+      * `Position:` Posición
+      * `static:` estatica
+      * `relative:` se mueve si el padre lo llama
+      * `fixed:` es fijo no importa si se hace scroll
+      * `absolute:` es engañoso, actua con el fixed
 
-  #####
+    ##### Juego Selector de clases CSS
+    ![Juego "Selectors"][play_game]
+    <br /><br />
+    Alguna de los items tratados en el juego
+    • A + B selecciona el hermanos adyacentes
+    • A ~ B selecciona todos los hermanos adyacentes
+    • A> B selecciona hijos directos de un elemento
+    • : Puño-niño Seleccione un primer elemento de niño dentro de otro elemento
+    • : Hijo único Seleccione un elemento que es el único elemento en el interior del otro.
+    • : Last-child Seleccione el último elemento dentro de otro elemento
+    • : nth-child (A) Seleccionar un elemento por su orden en el otro elemento.
+    • : nth-last-child (A) Seleccione un elemento por su orden en el otro elemento, a contar desde la parte de atrás
+    • : la primera de tipo Seleccione el primer elemento de un tipo específico
+    • : de tipo de orden n (A) Selecciona un elemento específico en función de su tipo y el orden en otro elemento - o pares o impares instancias de ese elemento.
+    • : n-ésimo de tipo (An + B) La fórmula de n-ésimo de tipo selecciona cada elemento n-ésimo, comenzando el conteo en una instancia específica de ese elemento.
+    • : only-de-tipo Selecciona el único elemento de este tipo dentro de otro elemento.
+    • : el último de los de tipo Seleccione el último elemento de un tipo específico.
+    • : vacío Selecciona los elementos que no tienen ningún otros elementos dentro de ellos.
+    • : No (X) selecciona todos los elementos que no coinciden con el selector de negación.
+    • [atributo] Seleccionar todos los elementos que tienen un atributo específico.
+    • A [atributo] Seleccionar todos los elementos que tienen un atributo específico.
+    • [atributo = "valor"] Seleccionar todos los elementos que tienen un valor de atributo específico. Selectores de atributos entre mayúsculas y minúsculas, cada personaje debe coincidir exactamente.
+    • [^ atributo = "valor"] Seleccionar todos los elementos con un valor de atributo que se inicia con caracteres específicos.
+    • [atributo $ = "valor"] Seleccionar todos los elementos con un valor de atributo que termina con caracteres específicos.
+    [atributo = "valor"] * Seleccionar todos los elementos con un valor de atributo que contiene caracteres específicos en cualquier lugar. Un selector útil si se puede identificar un patrón común en cosas como atributos de clase, o href src.
 
 =================================================================
 
 ## Semana **`2`** del 4 al 8 de julio `(fundamentos de JavaScript, CSS,  y HTML semántico)`
 
 * #### 4 Julio del 2017
+   ##### CSS Floats (Flotantes)
+  *  ###### ¿Que es CSS floats?
+     ###### Maquetacion
+     ***Floats:*** estos pueden floar de izquierda a derecha o viceversa.
+
+     ***Full-bleed:*** Es cuando el elemento contiene la maquetación donde ocupa el 100% de la pantalla
+
+     ***Overflow:*** hidden; (para texto e imagen)
+
+     ***Notas:*** *Los flotantes no generan un `Height` po lo tanto tendreos que ponerle como propiedad `overflow:hidden` donde se encuentran los flotantes. Adicionalmente a esto si deseamos poner a flotar una imagen que la tenemos por los `medio object` y queremos que el texto se aline junto con la imagen se le da la misma propiedad anunciada con antelacion*
+
    ##### Introduccion a JavaScript
   *  ###### ¿Que es JavaScript?
   *  ###### ¿Que es una variable?
   *  ###### ¿Que es un algoritmo?
   *  ###### ¿Que es una funcion?
 
-  ***Componentes basicos de JavaScript***
-`type of var` <!--gives the var type-->  
-`var suma = 2 + 5` <!--make operations within the declaration-->  
-`var a` <!--undefined variable -->
-`var lista = []` <!--define an array-->  
-  ***Objetos***     
-```
-var human = {
-    eyes: "blue",
-    skin: "white",
-    age: 20,
-    isOlder:false,
-    city: Medellin,
-    country:Colombia,
-}
-```
+      ***Componentes basicos de JavaScript***
 
-`human.eyes or human["eyes"]`
+      `type of var` <!--tipo de variable-->  
+      `var suma = 2 + 5` <!--declaracion de operaciones-->  
+      `var a` <!--variable -->
+      `var lista = []` <!--definicion de una array-->  
 
-```
-var context{
-    .query{
-        name = 'David'
-        pet = 'Dog'
-    }
-}
-```
+      ***Objetos***
+      ```js
+        var humano = {
+          ojos: "café",
+          piel: "Blanco",
+          edad: 20,
+          esAdulto: false
+        }
+        humano
+        Object {ojos: "café", piel: "Blanco", edad: 20, esAdulto: false}
+          humano.edad
+            20
 
-  ***funcion***
-```
-function suma(x + y){
-    return x + y;
-}
-```
-`suma();`  
-`var miSuma = suma(5, 2);`  
-`var Suma = suma();`
+        function suma (x, y)
+        {
 
-```
-var humano = {
-    nombre: 'Guillermo'
-    caminar: function(){
-        consolo.log('Caminando...');
-    },
-    sumar: function(x,y){
         return x + y;
-    }
-}
-```
-`humano.sumar(3,6)`  
-`humano.caminar()`
+        }
 
-***Ejercicio***
-Hacer la estructura de HTML con todos los componentes
-CSS-> page, sidebar, content, footer, column
+        undefined
+        suma
+
+        var miSuma = suma (34, 56);
+        undefined
+          miSuma
+            90
+
+        var otraSuma = suma
+          undefined
+            otraSuma (73, 67);
+              140
+        ```
+        ```js
+        var human = {
+            eyes: "blue",
+            skin: "white",
+            age: 20,
+            isOlder:false,
+            city: Medellin,
+            country:Colombia
+        }
+        ```
+        `human.eyes or human["eyes"]`
+        ```js
+        var context{
+            .query{
+                name = 'David'
+                pet = 'Dog'
+            }
+        }
+        ```
+        ***funcion***
+        ```js
+        function suma(x + y){
+            return x + y;
+        }
+        ```
+        `suma();`  
+        `var miSuma = suma(5, 2);`  
+        `var Suma = suma();`
+
+        ```js
+        var humano = {
+            nombre: 'Guillermo'
+            caminar: function(){
+                consolo.log('Caminando...');
+            },
+            sumar: function(x,y){
+                return x + y;
+            }
+        }
+        ```
+        `humano.sumar(3,6)`  
+        `humano.caminar()`
+
+        ***Ejercicio***
+        Hacer la estructura de HTML con todos los componentes
+        CSS-> page, sidebar, content, footer, column
+        [Pagina][]
 
 * #### 5 Julio del 2017
    ##### Repaso del dia 4 de julio
@@ -470,7 +774,24 @@ CSS-> page, sidebar, content, footer, column
    Variables
    funciones
    Tipos que pueden ser nativos
-   Declara  la vaariable ques sedefine como tipo tipado son numeros
+   Declara  la vaariable ques sedefine como tipo tipado son numeros.
+
+  **Ejercicio**
+  ```js
+  function calcularEdad(edad){/* esta funcion me va a devolver si es menor de edad, si es mayor de edad o si es  de la  tercera edad (Es decir tiene mas de 60 años)*/}
+  ```
+  Puedes abrir el archivo 
+  [calcularEdad.js][]
+  ##### Operadores
+  * ###### Asignacion compuesta
+    * Division `/` o ➗
+    * Multiplicacion
+    * Resta
+    * Suma
+  * ###### Incrementacion
+    * ++ : Aumenta
+  * ###### Igualdad
+    * texto == Numero
 
 ----------------------------------------------------------------
 
@@ -513,17 +834,17 @@ Lista de amigos
  *  ###### Error en Git Local o repositorio de GitHub
 
  *  ###### Clonar repositorio de Guillo
-     ```
+     ```GitHub
      ~/documents/code (master)
      $ git clone https://github.com/glrodasz/frontend-bootcamp.git Renombrar con otro nombre.
-     ````
+     ```
   ##### DOM (Document Object Model)
  *  ######
 
  ----------------------------------------------------------------
 
  * #### 11 Julio del 2017
-    ##### 
+    #####
    *  ###### ¿Que es ?
 
 ----------------------------------------------------------------
@@ -569,7 +890,7 @@ Lista de amigos
 
 
 
-
+<!--<>-->
 
 
 <br />
@@ -580,7 +901,7 @@ Lista de amigos
 <br />
 <center>
   <footer>
-     <a style="float: left" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="img/cc.png"></a>
+     <a style="float: left" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/img/cc.png"></a>
 <p>
 <br />
 <br />
@@ -591,6 +912,8 @@ Lista de amigos
   </footer>
   </center>
 
+<!--<>-->
+
 <!-- Enlaces de Webs -->
 [Descargar Git ¡Aca!]:https://git-scm.com/downloads "Descargar Git"
 [Registrate :octocat:]: https://github.com/join?source=header-home "Registrarse en GitHub"
@@ -599,11 +922,15 @@ Lista de amigos
 [Webtask.io]: https://webtask.io/ "Web Task"
 [Aaron Swartz]: https://es.wikipedia.org/wiki/Aaron_Swartz "El Hijo del Internet"
 [John Gruber]: https://en.wikipedia.org/wiki/John_Gruber "Creador de MarkDown"
-[Ingresa ¡Aca!]: ejemplo_links.md "Ejemplos de Enlaces"
+[Ingresa ¡Aca!]: /Otros/ejemplo_links.md "Ejemplos de Enlaces"
 [dillinger.io]: http://dillinger.io/ "Editor MarkDown"
 [Guia MarkDown]: https://guides.github.com/features/mastering-markdown/ "Guia Git para MarkDown"
+[Pagina]: Elements_Float\pagina.html "footer,Headers, column"
+[Html 5 Doctor]: http://html5doctor.com/ "Html 5 Doctor"
+[calcularEdad.js]: /javascript/calcularEdad.js "Calcular la edad"
 
 <!--<>-->
+
 <!-- Enlaces de Imagenes -->
 [consola]: /img/Git_Bash.png  "Abrir Consola Git Bash"
 [Consola Git Bash]: /img/Consola_git_bash.JPG "Consola Git Bash"
@@ -613,4 +940,6 @@ Lista de amigos
 [webtask]: /img/webtask.jpg "Web Task"
 [webtask_login]: /img/webtask_login.JPG "Ingreso a la plataforma de WebTask"
 [webtask_edit]: /img/webtask_edit.JPG "Nuestra primera vista del editor"
-[dillinger]: img\dillinger.JPG "Editor online dillinger.io"
+[dillinger]: /img/dillinger.JPG "Editor online dillinger.io"
+[style]: /img/style.JPG "Ejemplo de estilo"
+[play_game]: /img/selectores.jpg "Juego de selectores"
