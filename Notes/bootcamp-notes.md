@@ -562,29 +562,29 @@
       ###### Pseudo-Clases
       `:link` = un link que nunca ha sido visitado
 
-          `:visited` = el estado cuando el link ya ha sido visitado
+      `:visited` = el estado cuando el link ya ha sido visitado
 
-          `:hover` = el estado cuando el puntero del mouse está sobre el link
+      `:hover` = el estado cuando el puntero del mouse está sobre el link
 
-          `:active` = el estado cuando el link está siendo presionado
+      `:active` = el estado cuando el link está siendo presionado
 
-          `:focus` = un campo de formulario seleccionado
+      `:focus` = un campo de formulario seleccionado
 
-          `:empty` = selecciona elementos vacios
+      `:empty` = selecciona elementos vacios
 
-          `:not()` = selecciona a los elementos que no coincidan con el selector pasado como parametro
+      `:not()` = selecciona a los elementos que no coincidan con el selector pasado como parametro
 
-          `:selection` = para aplicar estilos a la seleccion
+      `:selection` = para aplicar estilos a la seleccion
 
-          `:target` = selecciona el destino de un enlace interno
+      `:target` = selecciona el destino de un enlace interno
 
-          ```CSS
-          p {
-                propiedad: valor;
-          }
-          ```
-          ###### Especifidad
-          Tiene la importancia de las reglas declaradas en el `CSS`; `Specifity Calculator` es una herramienta que permite calcular la importancia de la reglas en `CSS`
+      ```CSS
+      p {
+            propiedad: valor;
+      }
+      ```
+      ###### Especifidad
+      Tiene la importancia de las reglas declaradas en el `CSS`; `Specifity Calculator` es una herramienta que permite calcular la importancia de la reglas en `CSS`
 
   ***Nota -2:*** no se puede usar `id` en `CSS` cuando se este en la *Especifidad*
   `!important `tiene la maxima Especifidad  donde los ultimos seran los primeros.      
