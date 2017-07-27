@@ -491,9 +491,7 @@
       ```Html
           <link rel="stylesheet" type="text/css" href="style/main.css">
       ```
-
       ![Style][style]
-
       ###### Unidades de medidad `Pixeles`
       Existen diferentes tipo de medidas para las diferentes acciones que se va a realizar como: `px`, `em`, `vh`, `%`.
       ```Bash
@@ -511,14 +509,12 @@
       ###### Elementos bloques y en línea
       ***Los Elementos en bloques*** ocupan todo el `width` de su contenedor padre. Entre dos Elementos bloques no se le suman los `Margin` ya que siempre va a prevalecer el mayor margen en el cual solo tomara uno.
       Miestras que los ***Elementos en linea*** ocupa todo el `width` de su contenedor, llegado el caso que se utilice el width no lo va a reconocer ya que maneja su propia dimension
-
       ###### Modelo de caja
       En el `HTML` siempre vamos a diagramar, como si tuvieramos un conjunto de cajas, donde cada caja siempre va ha tener su contenido, un padding, un borde, un margin por todos los costados de la caja.
       ```Bash
       Margin: muestra los bordes hacia fuera.
       Padding: muetra los borde hacia adentro.
       ```
-
       ###### Resetear estilos
       Para resetear los estilos que viene por default en los navegadores como lo es el `padding` y el `margin` se utiliza el selector `*`.
       ```CSS
@@ -566,36 +562,36 @@
       ###### Pseudo-Clases
       `:link` = un link que nunca ha sido visitado
 
-      `:visited` = el estado cuando el link ya ha sido visitado
+          `:visited` = el estado cuando el link ya ha sido visitado
 
-      `:hover` = el estado cuando el puntero del mouse está sobre el link
+          `:hover` = el estado cuando el puntero del mouse está sobre el link
 
-      `:active` = el estado cuando el link está siendo presionado
+          `:active` = el estado cuando el link está siendo presionado
 
-      `:focus` = un campo de formulario seleccionado
+          `:focus` = un campo de formulario seleccionado
 
-      `:empty` = selecciona elementos vacios
+          `:empty` = selecciona elementos vacios
 
-      `:not()` = selecciona a los elementos que no coincidan con el selector pasado como parametro
+          `:not()` = selecciona a los elementos que no coincidan con el selector pasado como parametro
 
-      `:selection` = para aplicar estilos a la seleccion
+          `:selection` = para aplicar estilos a la seleccion
 
-      `:target` = selecciona el destino de un enlace interno
+          `:target` = selecciona el destino de un enlace interno
 
-      ```CSS
-      p {
-            propiedad: valor;
-      }
-      ```
-      ###### Especifidad
-      Tiene la importancia de las reglas declaradas en el `CSS`; `Specifity Calculator` es una herramienta que permite calcular la importancia de la reglas en `CSS`
+          ```CSS
+          p {
+                propiedad: valor;
+          }
+          ```
+          ###### Especifidad
+          Tiene la importancia de las reglas declaradas en el `CSS`; `Specifity Calculator` es una herramienta que permite calcular la importancia de la reglas en `CSS`
 
-***Nota -2:*** no se puede usar `id` en `CSS` cuando se este en la *Especifidad*
-`!important `tiene la maxima Especifidad  donde los ultimos seran los primeros.      
-***Nota-1:*** para calcular el tamaño de un elemento en `css`  se hace con:
-```CSS
-width:calc (100%-100px);
-```
+  ***Nota -2:*** no se puede usar `id` en `CSS` cuando se este en la *Especifidad*
+  `!important `tiene la maxima Especifidad  donde los ultimos seran los primeros.      
+  ***Nota-1:*** para calcular el tamaño de un elemento en `css`  se hace con:
+  ```CSS
+  width:calc (100%-100px);
+  ```
 ----------------------------------------------------------------
 
   * #### 1 Julio del 2017
@@ -632,28 +628,27 @@ width:calc (100%-100px);
     ##### Juego Selector de clases CSS
     ![Juego "Selectors"][play_game]
     <br /><br />
-    Alguna de los items tratados en el juego
-    • A + B selecciona el hermanos adyacentes
-    • A ~ B selecciona todos los hermanos adyacentes
-    • A> B selecciona hijos directos de un elemento
-    • : Puño-niño Seleccione un primer elemento de niño dentro de otro elemento
-    • : Hijo único Seleccione un elemento que es el único elemento en el interior del otro.
-    • : Last-child Seleccione el último elemento dentro de otro elemento
-    • : nth-child (A) Seleccionar un elemento por su orden en el otro elemento.
-    • : nth-last-child (A) Seleccione un elemento por su orden en el otro elemento, a contar desde la parte de atrás
-    • : la primera de tipo Seleccione el primer elemento de un tipo específico
-    • : de tipo de orden n (A) Selecciona un elemento específico en función de su tipo y el orden en otro elemento - o pares o impares instancias de ese elemento.
-    • : n-ésimo de tipo (An + B) La fórmula de n-ésimo de tipo selecciona cada elemento n-ésimo, comenzando el conteo en una instancia específica de ese elemento.
-    • : only-de-tipo Selecciona el único elemento de este tipo dentro de otro elemento.
-    • : el último de los de tipo Seleccione el último elemento de un tipo específico.
-    • : vacío Selecciona los elementos que no tienen ningún otros elementos dentro de ellos.
-    • : No (X) selecciona todos los elementos que no coinciden con el selector de negación.
-    • [atributo] Seleccionar todos los elementos que tienen un atributo específico.
-    • A [atributo] Seleccionar todos los elementos que tienen un atributo específico.
-    • [atributo = "valor"] Seleccionar todos los elementos que tienen un valor de atributo específico. Selectores de atributos entre mayúsculas y minúsculas, cada personaje debe coincidir exactamente.
-    • [^ atributo = "valor"] Seleccionar todos los elementos con un valor de atributo que se inicia con caracteres específicos.
-    • [atributo $ = "valor"] Seleccionar todos los elementos con un valor de atributo que termina con caracteres específicos.
-    [atributo = "valor"] * Seleccionar todos los elementos con un valor de atributo que contiene caracteres específicos en cualquier lugar. Un selector útil si se puede identificar un patrón común en cosas como atributos de clase, o href src.
+    * A + B selects the adjacent sibling
+    * A ~ B selects all the adjacent siblings
+    * A > B selects direct children of an element
+    * :fist-child Select a first child element inside of another element
+    * :only-child Select an element that are the only element inside of another one.
+    * :last-child Select the last element inside of another element
+    * *:nth-child(A)* Select an element by its order in another element.
+    * *:nth-last-child(A)* Select an element by its order in another element, counting from the back
+    * *:first-of-type* Select the first element of a specific type
+    * *:nth-of-type(A)* Selects a specific element based on its type and order in another element - or even or odd instances of that element.
+    * *:nth-of-type(An+B)* The nth-of-type formula selects every nth element, starting the count at a specific instance of that element.
+    * *:only-of-type* Selects the only element of its type within another element.
+    * *:last-of-type* Select the last element of a specific type.
+    * *:empty* Selects elements that don't have any other elements inside of them.
+    * *:not(X)* Selects all elements that don't match the negation selector.
+    * *[attribute]* Select all elements that have a specific attribute.
+    * *A[attribute]* Select all elements that have a specific attribute.
+    * *[attribute="value"]* Select all elements that have a specific attribute value. Attribute selectors are case sensitive, each character must match exactly.
+    * *[attribute^="value"]* Select all elements with an attribute value that starts with specific characters.
+    * *[attribute$="value"]* Select all elements with an attribute value that ends with specific characters.
+    * *[attribute*="value"]* Select all elements with an attribute value that contains specific characters anywhere. A useful selector if you can identify a common pattern in things like class, href or src attributes.
 
 =================================================================
 
@@ -682,88 +677,86 @@ width:calc (100%-100px);
       `type of var` <!--tipo de variable-->  
       `var suma = 2 + 5` <!--declaracion de operaciones-->  
       `var a` <!--variable -->
-      `var lista = []` <!--definicion de una array-->  
+      `var lista = []` <!--definicion de una array-->
 
       ***Objetos***
       ```js
-        var humano = {
-          ojos: "café",
-          piel: "Blanco",
-          edad: 20,
-          esAdulto: false
+      var humano = {
+        ojos: "café",
+        piel: "Blanco",
+        edad: 20,
+        esAdulto: false
         }
         humano
         Object {ojos: "café", piel: "Blanco", edad: 20, esAdulto: false}
-          humano.edad
-            20
-
+        humano.edad
+        20
         function suma (x, y)
         {
-
         return x + y;
         }
-
-        undefined
+        /* undefined
         suma
-
         var miSuma = suma (34, 56);
         undefined
-          miSuma
-            90
-
+        miSuma
+        90
         var otraSuma = suma
-          undefined
-            otraSuma (73, 67);
-              140
-        ```
-        ```js
-        var human = {
-            eyes: "blue",
-            skin: "white",
-            age: 20,
-            isOlder:false,
-            city: Medellin,
-            country:Colombia
+        undefined
+        otraSuma (73, 67);
+        140*/
+      ```
+      ```js
+      var human = {
+        eyes: "blue",
+        skin: "white",
+        age: 20,
+        isOlder:false,
+        city: Medellin,
+        country:Colombia
         }
-        ```
-        `human.eyes or human["eyes"]`
-        ```js
-        var context{
-            .query{
-                name = 'David'
-                pet = 'Dog'
-            }
+      ```
+      `human.eyes or human["eyes"]`
+      ```js
+      var context{
+        .query{
+        name = 'David'
+        pet = 'Dog'
         }
-        ```
-        ***funcion***
-        ```js
-        function suma(x + y){
-            return x + y;
-        }
-        ```
-        `suma();`  
-        `var miSuma = suma(5, 2);`  
-        `var Suma = suma();`
+     }
+      ```
+      ***Funcion***
+      ```js
+      function suma(x + y){
+      return x + y;
+      }
+      ```
+      `suma();`
 
-        ```js
-        var humano = {
-            nombre: 'Guillermo'
-            caminar: function(){
-                consolo.log('Caminando...');
-            },
-            sumar: function(x,y){
-                return x + y;
-            }
+      `var miSuma = suma(5, 2);`
+
+      `var Suma = suma();`
+      ```js
+      var humano = {
+        nombre: 'Guillermo'
+        caminar: function(){
+        consolo.log('Caminando...');
+        },
+        sumar: function(x,y){
+        return x + y;
         }
-        ```
-        `humano.sumar(3,6)`  
-        `humano.caminar()`
+        }
+      ```
+      `humano.sumar(3,6)`
+      
+      `humano.caminar()`
 
-        ***Ejercicio***
-        Hacer la estructura de HTML con todos los componentes
-        CSS-> page, sidebar, content, footer, column
-        [Pagina][]
+      ***Ejercicio***
 
+      Hacer la estructura de HTML con todos los componentes
+      CSS-> page, sidebar, content, footer, column
+      [Pagina][]
+-----------------------------------------------------------------
 * #### 5 Julio del 2017
    ##### Repaso del dia 4 de julio
    Algoritmo instrucciones para sumar
@@ -778,9 +771,12 @@ width:calc (100%-100px);
 
   **Ejercicio**
   ```js
-  function calcularEdad(edad){/* esta funcion me va a devolver si es menor de edad, si es mayor de edad o si es  de la  tercera edad (Es decir tiene mas de 60 años)*/}
+  function calcularEdad(edad)
+  {/* esta funcion me va a devolver si es menor de edad,
+  si es mayor de edad o si es  de la  tercera edad (Es decir tiene mas de 60 años)*/
+  }
   ```
-  Puedes abrir el archivo 
+  Puedes abrir el archivo
   [calcularEdad.js][]
   ##### Operadores
   * ###### Asignacion compuesta
@@ -925,9 +921,10 @@ Lista de amigos
 [Ingresa ¡Aca!]: /Otros/ejemplo_links.md "Ejemplos de Enlaces"
 [dillinger.io]: http://dillinger.io/ "Editor MarkDown"
 [Guia MarkDown]: https://guides.github.com/features/mastering-markdown/ "Guia Git para MarkDown"
-[Pagina]: Elements_Float\pagina.html "footer,Headers, column"
+[Pagina]: /Elements_Float/pagina.html "footer,Headers, column"
 [Html 5 Doctor]: http://html5doctor.com/ "Html 5 Doctor"
 [calcularEdad.js]: /javascript/calcularEdad.js "Calcular la edad"
+
 
 <!--<>-->
 
