@@ -1,4 +1,6 @@
 # Notas del BootCamp - FrontEnd
+## Nuestro inicio en el bootcamp 😆+👩‍+💻
+![BootCamp Front-end][bootcamp]
 
 ## Semana **`1`** del 27 de junio al 1 de julio `(Introducción a: Git y GitHub, Webtask, SCRUM, Markdown, HMTL5 y CSS3)`
 
@@ -586,12 +588,12 @@
       ###### Especifidad
       Tiene la importancia de las reglas declaradas en el `CSS`; `Specifity Calculator` es una herramienta que permite calcular la importancia de la reglas en `CSS`
 
-  ***Nota -2:*** no se puede usar `id` en `CSS` cuando se este en la *Especifidad*
-  `!important `tiene la maxima Especifidad  donde los ultimos seran los primeros.      
-  ***Nota-1:*** para calcular el tamaño de un elemento en `css`  se hace con:
-  ```CSS
-  width:calc (100%-100px);
-  ```
+    ***Nota -2:*** no se puede usar `id` en `CSS` cuando se este en la *Especifidad*
+    `!important `tiene la maxima Especifidad  donde los ultimos seran los primeros.      
+    ***Nota-1:*** para calcular el tamaño de un elemento en `css`  se hace con:
+    ```CSS
+    width:calc (100%-100px);
+    ```
 ----------------------------------------------------------------
 
   * #### 1 Julio del 2017
@@ -748,7 +750,7 @@
         }
       ```
       `humano.sumar(3,6)`
-      
+
       `humano.caminar()`
 
       ***Ejercicio***
@@ -780,20 +782,113 @@
   [calcularEdad.js][]
   ##### Operadores
   * ###### Asignacion compuesta
-    * Division `/` o ➗
-    * Multiplicacion
-    * Resta
-    * Suma
+    * Division `➗` ó `/`
+    * Multiplicacion `✖️` ó `*`
+    * Resta `➖`
+    * Suma `➕`
   * ###### Incrementacion
-    * ++ : Aumenta
+    * `++` : Aumenta
   * ###### Igualdad
-    * texto == Numero
+    * texto `==` Numero
 
 ----------------------------------------------------------------
 
 * #### 6 Julio del 2017
-   ##### Introduccion a JavaScript
-  *  ###### ¿Que es JavaScript?
+   ##### Clouster
+  *  ###### ¿Que es clouster?
+    Crea funciones dinámicas con la capacidad de recordar parámetros. Crea una función que no retorna otra función, en el cual, guarda el parametro que se utilizo en la primera función.
+  ```js
+  function sumar(x){
+    return function (y){ return x + y }
+  }
+  var a = sumar(1);
+  // la funcion a almacena un valor
+  function (y){ 
+    return 1 + y 
+    } //le suma 1 al valor que se le digite
+  a(10);//Su resultado 11
+  ```
+  ***Nota:*** *la variable se puede ejecutar inmediatamente si es necesaria para almacenarla.*
+  ```js
+  function makeAdder(x, y){
+  return function(n, m){
+      return x+y+n+m;
+    }
+  }
+  makeAdder(1,1)(2,2) //Se le pasa la primera funcio con dos valores, lo mismo que en la segunda funcion en el cual nos retornara en la suma que nos dara el resultado de 6
+  ```
+   ##### setTimeout()
+  *  ###### ¿Que es setTimeout()?
+     Función que ejecuta en cierto tiempo. Se declarar la función a ejecutar.
+  ```js
+  setTimeout(function(){
+    console.log('imprimir cada 2 segundos')
+  }, 5000)
+  ```
+  En el `for` es mas rapido por lo tanto solo se ejecutara una sola vez.
+  ```js
+  for(var i=0; i<10; i++){
+    setTimeout(function(){
+      console.log(i);
+    }, 5000)
+  }
+  ```
+  ```js
+  for(var i=0; i<10; i++){
+    setTimeout((function(i){
+      return function(){ console.log(i); };
+    }(i)), 1000)
+  }
+
+  for(var i=0; i<10; i++){
+    (function(x){
+    return function(){ setTimeout(function(){
+      console.log(i);
+    }, 5000)}
+    })(i)}
+
+  ```
+   ##### IIFE
+  *  ###### ¿Que es IIFE?
+     Immediately Invoked Function Expression, ejecuta la declaracion inmediatamente.
+  ```javascript
+  (function miFuncion(nombre){
+    console.log('Este es mi nombre ' + nombre);
+  }('Calypso Bronte'));
+  ```
+   ##### This
+  *  ###### ¿Que es This?
+     Palabra reservada de `js`, que nos permite cambiar el contexto de una función.
+   ##### Flexbox
+  *  ###### ¿Que es flexbox?
+     Con el  `FlexBox` posicionar facilimente los elementos de una forma Responsive sin necesidad de utilizar `Float`.
+     ![Juego "FlexBox Froggy"][flexbox]
+     ![Juego "FlexBox Froggy"][flexbox_css]
+   ##### JavaScripting
+  *  ###### ¿Que es JavaScripting?
+      * ***instalacion de Javascripting***
+      Ingresar a la terminal
+      ```console
+      $ npm install -g javascripting
+      ```
+      Despues de instalado el javascripting segimos con los otros pasos:
+      crear la carpeta
+      ```console
+      $ mkdir javascripting
+      ```
+      Ingresamos a la carpeta creada
+      ```console
+      $ cd javascripting
+      ```
+      ejecutamos el programa
+      ```console
+      $ javascripting
+      ```
+      en la consola nos mostrar algo asi:
+      ![Javascripting "Console"][javascripting]
+      Seleccionamos el primero para empezar a realizar los retos
+      Este nos mostrar lo que debemos de hacer paso a paso.
+      ![Paso a paso de Javascripting][gif_console]
 ----------------------------------------------------------------
 
 * #### 7 Julio del 2017
@@ -875,7 +970,20 @@ Lista de amigos
  * #### 17 Julio del 2017
     #####
    *  ###### ¿Que es ?
+=================================================================
 
+## Semana **`5`** del 24 al 29 de julio `()`
+
+ * #### 17 Julio del 2017
+    #####
+   *  ###### ¿Que es ?
+=================================================================
+
+## Semana **`6`** del 31 de Julio al 5 de agosto `()`
+
+ * #### 17 Julio del 2017
+    #####
+   *  ###### ¿Que es ?
 
 
 
@@ -940,3 +1048,8 @@ Lista de amigos
 [dillinger]: /img/dillinger.JPG "Editor online dillinger.io"
 [style]: /img/style.JPG "Ejemplo de estilo"
 [play_game]: /img/selectores.jpg "Juego de selectores"
+[flexbox]: /img/flexbox-froggy-css.jpg "Inicio del Juego FlexBox Froggy"
+[flexbox_css]:/img/flexbox-froggy-css-final.JPG "Terminacion del Juego de Froggy"
+[bootcamp]: /img/Inicio_BootCamp_Front-End_27-06-2017_(1).jpg "Nuestrp inicio"
+[javascripting]: /img/javascripting.JPG "Javascripting"
+[gif_console]: /gif/tutorial.gif "Paso a pago Javascripting"
