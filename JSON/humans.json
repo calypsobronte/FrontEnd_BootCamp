@@ -1,35 +1,35 @@
 {
     "humans": [{
-            "name": "William",
-            "age": "25",
+            "name": "Vanessa",
+            "age": "20",
             "pets": ["cat", "dog"],
             "friends": true,
-            "friendslist": ["Andrés", "Melissa", "Sergio"]
+            "friendslist": ["Isabel", "Nelson", "Nando"]
         },
         {
-            "name": "Cristian",
-            "age": "25",
+            "name": "Ximena",
+            "age": "28",
             "pets": ["cat", "fish"],
             "friends": false,
             "friendslist": []
         },
         {
-            "name": "Andrés",
-            "age": "25",
+            "name": "karina",
+            "age": "27",
             "pets": ["cat", "bird"],
             "friends": true,
-            "friendslist": ["Susana", "Angie"]
+            "friendslist": ["Karen", "Jorge"]
         },
         {
-            "name": "William",
-            "age": "25",
+            "name": "Yulieth",
+            "age": "30",
             "pets": ["cat", "horse"],
             "friends": true,
-            "friendslist": ["Camila", "Lorena", "Sergio"]
+            "friendslist": ["Salome", "Linda", "Carlos"]
         },
         {
-            "name": "William",
-            "age": "25",
+            "name": "Carolina",
+            "age": "23",
             "pets": ["cat", "dog"],
             "friends": false,
             "friendslist": []

@@ -803,8 +803,8 @@
   }
   var a = sumar(1);
   // la funcion a almacena un valor
-  function (y){ 
-    return 1 + y 
+  function (y){
+    return 1 + y
     } //le suma 1 al valor que se le digite
   a(10);//Su resultado 11
   ```
@@ -892,14 +892,76 @@
 ----------------------------------------------------------------
 
 * #### 7 Julio del 2017
-   ##### Introduccion a JavaScript
-  *  ###### ¿Que es JavaScript?
+   ##### HTML Semantico
+  *  ###### ¿Que es HTML Semanico?
+      **outliner html** herramienta nos permite revisarla estructura semántica del html se encuentra correctamente definida.
+      **Semanico** Apariencia al Contenido
+      * Document: Online
+       * título: lista
+       * Titulo: texto
+       * Subtitul: texto
+      * Artículos: Articles
+      ```html
+      <article>
+        <h1> Título </h1>
+          <p> Texto .....</p>
+      </article>
+      <p> ©️, July 17 2017 </p>
+      ```
+      * Secciones: Sections " Separar las secciones de los artículos y estan realcionadas. "
+      * Nav: Elementos de navegación
 
+      ```html
+      <nav>
+        <ul>
+          <li><a href = "#"> Inicio </a></li>
+          <li><a href = "$"> Elementos </a></li>
+          <li><a href = "%"> Contacto </a></li>
+        </ul>
+      </nav>
+      ```
+      * Footers: <!--Falta-->
+      * Asides: Se puede expresar que es como una publicidad, osea algo que no tiene relacion con el contenido.
 ----------------------------------------------------------------
 
 * #### 8 Julio del 2017
-   ##### Introduccion a JavaScript
-  *  ###### ¿Que es JavaScript?
+   ##### Formularios
+  *  ###### ¿Que es Formularios?
+     Para la creacion de los formularios se hace con la etiqueta `<form> </form>`
+     ```html
+     <form action='' method= ''>
+      <!--Iform of inputs-->
+     </form>
+     ```
+      Alguno de los inputs que utiliza los formularios.
+
+      ><input type="text" placeholder="ejemplo caja de texto" > Texto
+
+      ```html
+      <input type="text" placeholder="ejemplo caja de texto"> <!--Caja de Texto-->
+      ```
+      ><input type="email" placeholder="examplemail@example.com"> Texto formato Email
+
+      ```html
+      <input type="email" placeholder="examplemail@example.com" > <!--Caja de Texto en formato email-->
+      ```
+      ><input type="button" value="Boton"> Boton
+
+      ```html
+      <input type="button" value="Boton"> <!--Boton -->
+      ```
+      ><input type="checkbox"> Caja de Seleccion
+
+      ```html
+      <input type="checkbox"> <!--Caja de Seleccion-->
+      ```
+      ***Media queries:*** declaración para el navegador para que aplique los estilos dependiendo de la  condición de medida.
+
+      * codrops
+      * browser diet
+      * A/B Testing
+
+      <!--Falta hacer el formulario HTML-->
 
 =================================================================
 
@@ -908,53 +970,149 @@
 * #### 10 Julio del 2017
    ##### JSON
   *  ###### ¿Que es JSON?
+      ***JSON*** objeto en ***javaScript*** se diferencian por sus  propiedades van entre comillas `""` . Un ***JSON*** debe estar dentro de un corchetes `{}`
+
+      ***JavaScript*** tiene dos metodos para usar ***JSON***.
+
+      ```js
+      JSON.parse(); Este nos sirve para convertir un JSON a un objeto de javaScript.
+      ```
+      ```js
+      JSON.stringify(); Este nos sirve para convertir un objeto de javaScript a un JSON.
+      ```
   *  ###### Ejercicio de Humanos.JSON
       Crear la estructur a de JSON con la lista de `Humanos` donde
       ```
-      5 humanos uno de ellos tener amigos
-Lista
-  humano
-         nombre
-	Edad
-	Animales (perros gatos peces)
-	Amigos boolean
-Lista de amigos
+      Nuestro JSON debe de tener:
+      5 humanos: uno de ellos tiene 3 amigos
+      Lista
+        humano
+        nombre
+        Edad
+        Animales (perros gatos peces)
+        Amigos boolean
+      Lista de amigos
       ```
 
   ##### Errores que aparece en Git y Clonar repositorio de Guillo
- *  ###### Error en Git Local o repositorio de GitHub
-
- *  ###### Clonar repositorio de Guillo
-     ```GitHub
-     ~/documents/code (master)
-     $ git clone https://github.com/glrodasz/frontend-bootcamp.git Renombrar con otro nombre.
-     ```
+  *  ###### Error en Git Local o repositorio de GitHub
+      ```console
+      $ git pull origin2 -m master
+      $ git status
+      $ git merge --abort
+      ```
+  *  ###### Clonar repositorio de Guillo
+      ```console
+      ~/documents/code (master)
+      $ git clone https://github.com/glrodasz/frontend-bootcamp.git Renombrar con otro nombre.
+      ```
   ##### DOM (Document Object Model)
- *  ######
+  *  ###### DOM:
+     `document.getElementById()` sirve para seleccionar los elementos del *DOM* por `id`.   
+     `document.querySelector()` sirve para seleccionar elementos del *DOM* utilizando selectores de `css` and `class`, `id` Siempre y cuando se cumplan las reglas.   
+     `document.querySelectorAll()` se cumplen los mismo parametros del `document.querySelector()`.
 
+    ---
+    ###### Documentación de nodos
+    - Node interfaces
+    - Methods
+    - Node properties
+
+      **Node interfaces:** partes del arbol
+
+      - Document  
+      - Element   
+      - Text    
+      - Comment   
+      - DocumentFragment    
+      - Document has methods    
+      - document.createElement()    
+      - document.createTextNode()   
+      - document.createElement('div')
+
+      **Node properties:**
+
+      - firstChild: referencia la primer hijo del nodo de un elemento.
+      
+      - lastChild: referencia el ultimo hijo nodo de un elemento. 
+      
+      - childNodes: referencia la lista que debe de tener el hijo en un elemento.
+      - parentNode: referencia al padre del nodo.
+      - nextSibling: referencia la siguiente <!--sibling--> secuencia 
+ 
+      - previousSibling: referencia al anterior <!--sibling--> en secuencia 
+        <!--childs are array-like document.ChildNotes[1].ChildNotes-->
+        <!--spaces are taken as text-->
+
+
+  ---
+  ```js
+  document.createElement('DIV');
+    <div> -- </div>
+  document.createTextNode('Hola mundo');
+  ```
+  ```js
+  "Hola mundo"
+  document.childNode:[1]
+  document.childNode:[1].childNodes[2]
+  document.childNode:[1].childNodes[2].childNodes
+  ```
+  ```js
+    document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form');
+        var buttonWarning
+        document.querySelector('btn-warning');
+          var textarea = form.querySelector('#exampleComment');
+        }
+      buttonWarning.addEventListener('click', function(event) {
+          console.log('el:', this.NnodeName, 'tipo:', event.type );
+        }
+          textarea.addEventListener('focus', function(event){
+          console.log('');
+        });
+  ```
+  ```js
+      form.addEventListener('submit', function(event){
+              event.preventDefault();
+      //1 opción: Para seleccionar
+      inputs.forEach(function(control)
+      {
+      if ((control.type === 'radio' || control.type ! == 'checkbox') $$ control.cheked) {
+          data[control.id] = control.value;
+        } else if (control.type ! == 'radio' || control ! == 'checkbox') {
+        data[control.id] = control.value; }
+      }
+  ```
+  Quitar evento por defecto con javaScript lo hacemos con `event.preventDefault();`.
+
+  ```js
+    form.addEventListener('submit', function(event){
+    event.preventDefault();
+    });
+  ```
  ----------------------------------------------------------------
 
  * #### 11 Julio del 2017
-    #####
+    ##### Libro you don't know JavaScript y Up and going
    *  ###### ¿Que es ?
 
 ----------------------------------------------------------------
 
   * #### 12 Julio del 2017
-  #####
- *  ###### ¿Que es ?
+    ##### Carrusel
+    *  ###### ¿Que es ?
 
 ----------------------------------------------------------------
 
  * #### 13 Julio del 2017
     #####
-   *  ###### ¿Que es ?
+    *  ###### ¿Que es ?
 
 ----------------------------------------------------------------
 
 * #### 14 Julio del 2017
- #####
-*  ###### ¿Que es ?
+    #####
+  *  ###### ¿Que es ?
 
 ----------------------------------------------------------------
 
@@ -1052,4 +1210,7 @@ Lista de amigos
 [flexbox_css]:/img/flexbox-froggy-css-final.JPG "Terminacion del Juego de Froggy"
 [bootcamp]: /img/Inicio_BootCamp_Front-End_27-06-2017_(1).jpg "Nuestrp inicio"
 [javascripting]: /img/javascripting.JPG "Javascripting"
+
+<!-- Enlaces de Gifs -->
+
 [gif_console]: /gif/tutorial.gif "Paso a pago Javascripting"
